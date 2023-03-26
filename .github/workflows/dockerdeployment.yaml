@@ -8,8 +8,8 @@ jobs:
       - uses: actions/checkout@v3
         name: Check out code
     
-      - uses: mr-smithers-excellent/docker-build-push@v4
-        name: Build & push Docker image
+      - name: Build & push Docker image
+        uses: mr-smithers-excellent/docker-build-push@v4
         with:
           image: yha7/myrepo
           registry: docker.io
